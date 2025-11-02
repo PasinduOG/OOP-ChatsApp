@@ -47,30 +47,30 @@ The application follows the **Model-View-Controller (MVC)** design pattern:
 
 ```
 ┌───────────────────────────────────────────────────────────────────────┐
-│                           APPLICATION                                  │
-│                                                                        │
-│   ┌──────────────┐        ┌────────────────┐        ┌─────────────┐  │
-│   │    MODEL     │        │   CONTROLLER   │        │    VIEW     │  │
-│   ├──────────────┤        ├────────────────┤        ├─────────────┤  │
-│   │              │        │                │        │             │  │
-│   │  LinkedList  │◄───────│ChatController  │───────►│ ChatWindow  │  │
-│   │              │        │                │        │             │  │
-│   │   - Node     │        │  - addWindow() │        │  - display  │  │
-│   │   - first    │        │  - remove()    │        │  - input    │  │
-│   │   - add()    │        │  - send()      │        │  - events   │  │
-│   │   - remove() │        │  - count()     │        │             │  │
-│   │   - size()   │        │                │        ├─────────────┤  │
-│   │   - toArray()│        │                │        │  Rename     │  │
-│   │              │        │                │        │  Window     │  │
-│   └──────────────┘        └────────────────┘        └─────────────┘  │
+│                              APPLICATION                              │
+│                                                                       │
+│   ┌──────────────┐        ┌────────────────┐        ┌─────────────┐   │
+│   │    MODEL     │        │   CONTROLLER   │        │    VIEW     │   │
+│   ├──────────────┤        ├────────────────┤        ├─────────────┤   │
+│   │              │        │                │        │             │   │
+│   │  LinkedList  │◄───────│ ChatController │───────►│  ChatWindow │   │
+│   │              │        │                │        │             │   │
+│   │ - Node       │        │ - addWindow()  │        │ - display   │   │
+│   │ - first      │        │ - remove()     │        │ - input     │   │
+│   │ - add()      │        │ - send()       │        │ - events    │   │
+│   │ - remove()   │        │ - count()      │        │             │   │
+│   │ - size()     │        │                │        ├─────────────┤   │
+│   │ - toArray()  │        │                │        │   Rename    │   │
+│   │              │        │                │        │   Window    │   │
+│   └──────────────┘        └────────────────┘        └─────────────┘   │
 │          ▲                        │                        │          │
 │          │                        │                        │          │
 │          │                        ▼                        ▼          │
 │          │                  Manages List              User Actions    │
-│          │                  of Windows               (Send, Edit)     │
+│          │                   of Windows               (Send, Edit)    │
 │          │                        │                        │          │
 │          └────────────────────────┴────────────────────────┘          │
-│                          Data Flow Loop                               │
+│                             Data Flow Loop                            │
 └───────────────────────────────────────────────────────────────────────┘
 ```
 
