@@ -17,7 +17,6 @@ public class ChatWindow extends javax.swing.JFrame {
 
     public void setMessage(String message) {
         textChatArea.append(message + "\n\n");
-        textChatArea.setCaretPosition(textChatArea.getDocument().getLength());
     }
 
     public void setUserName(String name) {
