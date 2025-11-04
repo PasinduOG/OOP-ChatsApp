@@ -2,12 +2,10 @@ package chatApp.controller;
 
 import chatApp.model.LinkedList;
 import chatApp.view.ChatWindow;
-import java.util.ArrayList;
 
 public class ChatController {
 
-    //private ArrayList<ChatWindow> chatWindowList = new ArrayList<>();
-    private LinkedList chatWindowList = new LinkedList();
+    private final LinkedList chatWindowList = new LinkedList();
 
     public void addChatWindow(ChatWindow chatWindow) {
         chatWindowList.add(chatWindow);
